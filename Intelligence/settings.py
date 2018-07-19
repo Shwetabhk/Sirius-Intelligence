@@ -28,7 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    '127.0.0.1'
+    '127.0.0.1',
+    '192.168.42.240'
 ]
 
 
@@ -141,7 +142,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT=os.path.join(BASE_DIR,"static","static_root")
-MEDIA_URL = '/users/media/'
+MEDIA_URL = '/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,"static","media_root")
 
 AUTH_USER_MODEL='users.User'   #Custom User Model

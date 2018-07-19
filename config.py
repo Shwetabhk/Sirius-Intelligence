@@ -21,4 +21,4 @@ class Secrets:
 
 #######SONG DIRECTORY##############
 
-    SONG_DIRECTORY='/media/shwetabh/76FC340DFC33C661/Documents and Settings/Shwetabh Kumar/My Documents/Rockstar Games/GTA V/User Music'
+    SONG_DIRECTORY='/home/shwetabh/Dev/User Music'
