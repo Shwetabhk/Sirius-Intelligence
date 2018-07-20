@@ -21,7 +21,7 @@ class SongInfo(CronJobBase):
                 response=song
                 artist_obj,exist=Artist.objects.get_or_create(artist_name=response['artist'][0],genre=response['genre'][0])
                 album_obj,exist=Album.objects.get_or_create(album_name=response['album'][0],date=response["date"][0][0:4],artist_id=artist_obj)
-                obj,exist=Song.objects.get_or_create(name=response['title'][0],target=self.upload_file_path(response['title'][0],file))
+                obj,exist=Song.objects.get_or_create(name=response['title'][0],target=self.upload_file_path(response['title'][0],file),album_id=album_obj)
             # fileopen.close()
 
             except Exception as e:
