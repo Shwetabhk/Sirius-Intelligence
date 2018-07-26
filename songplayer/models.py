@@ -4,6 +4,7 @@ from django.db import models
 class Artist(models.Model):
     artist_name=models.CharField(null=False,max_length=100)
     genre=models.CharField(null=False,max_length=100)
+    image=models.ImageField(null=True)
 
 
 class Album(models.Model):
@@ -26,6 +27,7 @@ def upload_file_path(instance,filename):
     inst=instance.id
     name,ext=get_file_ext(filename)
     return "audio/{name}{ext}".format(name=inst,ext=ext)
+
 
 class Song(models.Model):
     name=models.CharField(null=False,max_length=200)
