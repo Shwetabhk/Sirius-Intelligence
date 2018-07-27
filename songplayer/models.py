@@ -4,13 +4,14 @@ from django.db import models
 class Artist(models.Model):
     artist_name=models.CharField(null=False,max_length=100)
     genre=models.CharField(null=False,max_length=100)
-    image=models.ImageField(null=True)
+
 
 
 class Album(models.Model):
     album_name=models.CharField(null=False,default='',max_length=100)
     artist_id=models.ForeignKey(Artist, on_delete=models.CASCADE)
     date=models.CharField(null=True,max_length=10)
+    image=models.CharField(null=True,max_length=1000)
 
 class Youtube(models.Model):
     link=models.CharField(null=False,max_length=500)

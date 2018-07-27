@@ -6,3 +6,5 @@ django-cors-headers==2.3.0
 pillow==5.2.0
 mutagen==1.40.0
 djangorestframework==3.8.2
+google_images_download==2.3.0
+selenium==3.4.3

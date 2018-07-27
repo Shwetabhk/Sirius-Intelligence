@@ -12,7 +12,7 @@ class AlbumSerializer(serializers.ModelSerializer):
     artist_id=ArtistSerializer()
     class Meta:
         model=Album
-        fields=('id','album_name','artist_id')
+        fields=('id','album_name','artist_id','image')
 
 class SongSerializer(serializers.ModelSerializer):
     album_id=AlbumSerializer()

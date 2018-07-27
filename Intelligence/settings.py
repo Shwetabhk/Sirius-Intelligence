@@ -51,7 +51,8 @@ INSTALLED_APPS = [
 
 CRON_CLASSES = [
     'channel.crons.search_videos.SearchVideos',
-    'songplayer.crons.songinfo.SongInfo'
+    'songplayer.crons.songinfo.SongInfo',
+    'songplayer.crons.image_scraper.ImageScraper'
 ]
 
 MIDDLEWARE = [
