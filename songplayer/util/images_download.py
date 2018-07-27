@@ -592,8 +592,8 @@ class googleimagesdownload:
 
                 try:
                     output_file = open(path, 'wb')
-                    output_file.write(data)
-                    output_file.close()
+                    # output_file.write(data)
+                    # output_file.close()
                     absolute_path = os.path.abspath(path)
                 except OSError as e:
                     download_status = 'fail'
