@@ -107,6 +107,6 @@ class User(AbstractBaseUser):
     def is_active(self):
         "Is the user active?"
         return self.active
-        
+
 class History(models.Model):
     user_id=models.ForeignKey(User,on_delete=models.CASCADE)
