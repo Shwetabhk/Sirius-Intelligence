@@ -18,12 +18,14 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from users.views import user
-from songplayer.views import songs,artists
+from songplayer.views import songs,artists,genres,albums
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/v1/user/$',user),
     url(r'^api/v1/songs/$',songs),
+    url(r'^api/v1/genres/$',genres),
+    url(r'^api/v1/albums/$',albums),
     url(r'^api/v1/artists/$',artists)
 ]
 if settings.DEBUG:

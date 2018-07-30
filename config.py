@@ -21,4 +21,4 @@ class Secrets:
 
 #######SONG DIRECTORY##############
 
-    SONG_DIRECTORY='/home/shwetabh/Dev/User Music'
+    SONG_DIRECTORY='/media/prachi/Prachi-Disk/BTP/Tracks'
