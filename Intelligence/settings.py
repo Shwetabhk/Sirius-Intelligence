@@ -53,7 +53,7 @@ CRON_CLASSES = [
     'channel.crons.search_videos.SearchVideos',
     'songplayer.crons.songinfo.SongInfo',
     'songplayer.crons.image_scraper.ImageScraper',
-    'songplayer.crons.genre_scraper.GenreScraper'
+    'songplayer.crons.artist_image_scraper.ArtistImageScraper'
 ]
 
 MIDDLEWARE = [

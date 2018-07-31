@@ -7,7 +7,7 @@ class Genre(models.Model):
 class Artist(models.Model):
     artist_name=models.CharField(null=False,max_length=100)
     genre=models.ManyToManyField(Genre)
-
+    artist_image=models.CharField(null=True,max_length=10000)
 
 class Album(models.Model):
     album_name=models.CharField(null=False,default='',max_length=100)
