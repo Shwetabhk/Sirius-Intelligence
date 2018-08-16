@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from users.views import user
-from songplayer.views import songs,artists,genres,albums
+from songplayer.views import songs,artists,genres,albums,search
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -26,7 +26,8 @@ urlpatterns = [
     url(r'^api/v1/songs/$',songs),
     url(r'^api/v1/genres/$',genres),
     url(r'^api/v1/albums/$',albums),
-    url(r'^api/v1/artists/$',artists)
+    url(r'^api/v1/artists/$',artists),
+    url(r'^api/v1/search/$',search)
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)

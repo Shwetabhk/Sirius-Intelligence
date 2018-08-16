@@ -9,7 +9,7 @@ class GenreSerializer(serializers.ModelSerializer):
 class ArtistSerializer(serializers.ModelSerializer):
     class Meta:
         model=Artist
-        fields=('artist_name','genre')
+        fields=('id','artist_name','genre','artist_image')
 
 
 class AlbumSerializer(serializers.ModelSerializer):

@@ -28,3 +28,9 @@ def artists(request):
         artists=Artist.objects.order_by('artist_name').all()
         result=ArtistSerializer(artists,many=True)
         return JsonResponse(result.data,safe=False)
+
+def search(request):
+    if request.method=="GET":
+        songs=Song.objects.filter(name__icontains="oo").all()
+        result=SongSerializer(songs,many=True)
+        return  JsonResponse(result.data,safe=False)
