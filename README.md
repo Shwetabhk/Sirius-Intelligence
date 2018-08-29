@@ -1,6 +1,7 @@
 # Sirius Intelligence
 
-Sirius Intelligence is a backend API used in Sirius Music.
+Sirius Intelligence is a backend API used in Sirius Music. It remotely provides the Frontend Application the music with
+API calls. It is responsible for scrapping, arranging, processing and storing the data about diffent artists, genres, albums and songs. It also provides with the link to a particular song on youtube and the link is embedded in the Front-End Application.
 
 This API runs on Python 3.6. Make sure you have Python 3.6 and pip installed.
 
@@ -9,7 +10,7 @@ This API runs on Python 3.6. Make sure you have Python 3.6 and pip installed.
 
 Open the terminal and run the command:
 
-		git clone https://shwetabhk@bitbucket.org/shwetabhk/sirius-intelligence.git
+		git clone https://github.com/Shwetabhk/Sirius-Intelligence.git
 
 # Create a virtual environment
 
@@ -17,7 +18,7 @@ open your working directory in the terminal and run the following commands:
 
 		pip install virtualenv
 
-		virtualenv Sirius
+		python -m virtualenv Sirius
 
 		source sirius/bin/activate
 
