@@ -1,2 +1,3 @@
 /static/media_root/audio/*
-/downloads
+/downloads/
+/__pycache__/
